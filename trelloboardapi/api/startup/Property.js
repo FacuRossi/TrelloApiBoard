@@ -1,4 +1,4 @@
-var mongoose = require('mongoose');
+var mongoose = require('mongoose')
 
 var PropertySchema = new mongoose.Schema({  
   key: String,
