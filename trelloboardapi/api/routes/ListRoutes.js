@@ -3,4 +3,4 @@ module.exports = (app) => {
 
   	app.route('/lists/:listId/cards')
     	.get(listController.getCardsFromList)
-};
+}
