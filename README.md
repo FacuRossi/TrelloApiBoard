@@ -17,3 +17,4 @@ Source code repository for a personal projects organizer web app.
 3. Start Mongo -> startMongo.bat
 4. Start server -> sartServer.bat
 5. Start UI -> startUi.bat
+6. Open browser -> localhost:3000
