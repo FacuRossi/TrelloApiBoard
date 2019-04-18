@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Pod                                            
+metadata:
+  name: trello-board-ui
+  labels:
+    app: trello-board-ui                                 
+spec:                                                
+  containers:
+    - image: facurossi/trello-board-ui 
+      name: trello-board-ui                             
+      ports:
+        - containerPort: 80
+
+# Kind: specifies the kind of the Kubernetes Resource that we want to create. In our case, a Pod.
+# Name: defines the name for the resource. We named it sa-frontend.
+# Spec: is the object that defines the desired state for the resource. The most important property of a Pods Spec is the Array of containers.
+# Image: is the container image we want to start in this pod.
+# Name: is the unique name for a container in a pod.
+# Container Port:is the port at which the container is listening. This is just an indicator for the reader (dropping the port doesn’t restrict access).

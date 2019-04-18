@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Service              # 1
+metadata:
+  name: trello-board-lb
+spec:
+  type: LoadBalancer       # 2
+  ports:
+  - port: 80               # 3
+    protocol: TCP          # 4
+    targetPort: 80         # 5
+  selector:                # 6
+    app: trello-board-ui       # 7
+
+# Kind: A service.
+# Type: Specification type, we choose LoadBalancer because we want to balance the load between the pods.
+# Port: Specifies the port in which the service gets requests.
+# Protocol: Defines the communication.
+# TargetPort: The port at which incomming requests are forwarded.
+# Selector: Object that contains properties for selecting pods.
+# app: sa-frontend Defines which pods to target, only pods that are labeled with “app: sa-frontend”

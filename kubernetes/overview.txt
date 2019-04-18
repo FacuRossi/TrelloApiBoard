@@ -1,0 +1,10 @@
+Building / Packaging / Running ReactJS, Java and Python Applications
+Docker Containers; how to define and build them using Dockerfiles,
+Container Registries; we used the Docker Hub as a repository for our containers.
+We covered the most important parts of Kubernetes.
+Pods
+Services
+Deployments
+New concepts like Zero-Downtime deployments
+Creating scalable apps
+And in the process, we migrated the whole microservice application to a Kubernetes Cluster.

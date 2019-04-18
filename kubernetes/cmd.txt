@@ -1,0 +1,15 @@
+kubectl create -f sa-frontend-pod.yaml (vale para pods, services, )
+kubectl get nodes
+kubectl get svc
+kubectl get pods
+kubectl get pods --watch
+kubectl port-forward sa-frontend 88:80 (for quick debugging)
+kubectl apply -f sa-frontend-pod.yaml
+kubectl get pod -l app=sa-frontend
+kubectl get pod --show-labels
+kubectl apply -f deployment-trello-board-ui.yaml
+kubectl delete pod <pod-name>
+kubectl apply -f deployment-trello-board-ui:2doVersion.yaml --record
+kubectl rollout status deployment deployment-trello-board-ui
+kubectl rollout undo deployment deployment-trello-board-ui --to-revision=1
+minikube service listß

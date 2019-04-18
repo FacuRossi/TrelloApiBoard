@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod                                            
+metadata:
+  name: trello-board-ui2
+  labels:
+    app: trello-board-ui                                 
+spec:                                                
+  containers:
+    - image: facurossi/trello-board-ui 
+      name: trello-board-ui                             
+      ports:
+        - containerPort: 80
